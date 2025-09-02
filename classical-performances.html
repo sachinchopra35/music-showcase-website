@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Performances - Sachin Chopra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="page-container">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+        <header class="page-header">
+            <h1 class="page-title">Classical Performances</h1>
+            <p class="page-subtitle">Piano concerts and classical interpretations</p>
+        </header>
+
+        <!-- London Piano Concert Section -->
+        <section class="content-section">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: #6d88a3; text-align: center;">
+                Piano Concert - London
+            </h2>
+            <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 30px; text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">
+                Experience an intimate hour-long piano performance recorded in London. This concert showcases a carefully curated selection of classical works, each chosen for their emotional depth and technical artistry.
+            </p>
+
+            <!-- YouTube Video Embed -->
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/Nw-0orix0ok" 
+                    title="Piano Concert - London"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div style="text-align: center; margin-top: 20px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                <a href="#" class="album-link" onclick="openInNewTab('https://youtu.be/Nw-0orix0ok')" style="background: #FF0000;">
+                    <i class="fab fa-youtube"></i>
+                    Watch This Video
+                </a>
+                <a href="#" class="album-link" onclick="openInNewTab('https://www.youtube.com/@SachinChopra-b2y')" style="background: #FF0000;">
+                    <i class="fab fa-youtube"></i>
+                    Visit My Channel
+                </a>
+            </div>
+        </section>
+
+        <!-- Concert Program Section -->
+        <section class="content-section">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: #6d88a3; text-align: center;">
+                Concert Program
+            </h2>
+            <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 30px; text-align: center;">
+                The program from the London piano concert
+            </p>
+
+            <!-- Program Image -->
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="Attributes/piano_program_page2.png" 
+                     alt="Piano Concert Program - Page 2" 
+                     style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1);">
+            </div>
+
+            <div style="text-align: center;">
+                <a href="Attributes/Piano Program.pdf" download class="album-link" style="background: #4f46e5;">
+                    <i class="fas fa-download"></i>
+                    Download Full Program (4 pages)
+                </a>
+                <p style="color: rgba(255,255,255,0.8); margin-top: 15px; font-size: 0.9rem;">
+                    📄 Complete concert program with detailed composer notes
+                </p>
+            </div>
+        </section>
+
+        <!-- Performance Notes Section -->
+        <section class="content-section">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: #6d88a3; text-align: center;">
+                About This Performance
+            </h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 20px; line-height: 1.8;">
+                    This London concert represents a deeply personal exploration of classical repertoire. Each piece was selected not only for its technical challenges but for its emotional resonance and the story it tells through music.
+                </p>
+                <p style="font-size: 1.1rem; color: #e2e8f0; margin-bottom: 20px; line-height: 1.8;">
+                    The performance captures the intimate atmosphere of live classical music, where every note carries the weight of tradition while expressing personal interpretation and artistic vision.
+                </p>
+                <p style="font-size: 1rem; color: #888; font-style: italic; text-align: center; margin-top: 30px;">
+                    Visit my <a href="https://www.youtube.com/@SachinChopra-b2y" target="_blank" style="color: #4f46e5; text-decoration: underline;">YouTube channel</a> for more classical performances and subscribe for future concerts.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
