@@ -27,6 +27,72 @@
                 gap: 20px !important;
             }
         }
+        
+        /* Why classical music expandable box */
+        .why-classical-box {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 16px;
+            padding: 20px 24px;
+            margin: 25px auto 10px auto;
+            max-width: 700px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .why-classical-box:hover {
+            background: rgba(30, 41, 59, 0.85);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        
+        .why-classical-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #c7d2fe;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+        
+        .why-classical-header::after {
+            content: '▼';
+            font-size: 0.65rem;
+            color: #818cf8;
+            transition: transform 0.3s ease;
+        }
+        
+        .why-classical-box.expanded .why-classical-header::after {
+            transform: rotate(180deg);
+        }
+        
+        .why-classical-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .why-classical-box.expanded .why-classical-content {
+            max-height: 500px;
+            padding-top: 18px;
+        }
+        
+        .why-classical-content ul {
+            text-align: left;
+            margin: 0;
+            padding-left: 20px;
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .why-classical-content li {
+            margin-bottom: 12px;
+        }
+        
+        .why-classical-content li:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
@@ -39,6 +105,22 @@
         <header class="page-header">
             <h1 class="page-title">Classical Playlists</h1>
             <p class="page-subtitle">Curated collections for every mood and moment</p>
+            
+            <div class="why-classical-box" id="whyClassicalBox">
+                <div class="why-classical-header">
+                    Why do I listen to so much of this kind of music?
+                </div>
+                <div class="why-classical-content">
+                    <ul>
+                        <li>I enjoy all kinds of music (jazz, rap, drum and bass, garage, etc) but classical music is the most full of music.</li>
+                        <li>It's such a broad genre. The difference between Bach (1600's) and Rachmaninoff (1900's) is as big as the difference between smooth jazz and heavy metal.</li>
+                        <li>The bigger, longer pieces feel like watching a film. They create an atmosphere, build up tension in different ways, and then everything resolves nicely in the end.</li>
+                        <li>These songs don't get old like pop songs do. On a first listen, they might just come across as 'nice', but after each listen, you'll hear more layers of music, and eventually you'll be wanting to sing along to the chorus.</li>
+                        <li>On my commute to work, on the underground, I don't feel stressed like I used to. Now I'm just vibing and having a good time. This music is great food for the soul.</li>
+                        <li>I hope you enjoy these playlists as much as I do!</li>
+                    </ul>
+                </div>
+            </div>
         </header>
 
         <!-- Featured Chilled Playlists -->
@@ -72,7 +154,7 @@
                         </div>
                         <h3 class="playlist-title">Profoundly Calm</h3>
                         <p class="playlist-description">
-                            Deep tranquility in musical form. These pieces create a sense of profound peace and inner stillness.
+                            More modern, soulful, and expansive than the Mozart playlist. Songs on this one will often have bigger buildups and more intense emotional peaks. Listen to this one when you want to feel something.
                         </p>
                         <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/3xoUfxvl5UnhVlChPXkthT')">
                             <i class="fab fa-spotify"></i>
@@ -99,7 +181,7 @@
                         </div>
                         <h3 class="playlist-title">Goated Piano Concertos</h3>
                         <p class="playlist-description">
-                            A piano concerto is a huge piece of music, played by a pianist and an orchestra. Listen to the first concerto (Rachmaninoff's 2nd) and you'll see why it's the most loved piece of music in history.
+                            A piano concerto is a big piece of music, played by a pianist and an orchestra. Listen to the first concerto (Rachmaninoff's 2nd) and you'll see why it's the most loved piece of music in history.
                         </p>
                         <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/7dhPf4p4k5JXiDvoK2oFpb')">
                             <i class="fab fa-spotify"></i>
@@ -138,7 +220,7 @@
         <div class="content-section" style="text-align: center; padding: 40px 20px;">
             <h3 style="color: #f7fafc; font-size: 1.4rem; margin-bottom: 15px; font-weight: 500;">Ready for More?</h3>
             <p style="color: #e2e8f0; font-size: 1.1rem; max-width: 600px; margin: 0 auto 30px auto; line-height: 1.6;">
-                The featured playlists above are perfect for getting started. If you're ready to explore deeper...
+                Check out the dozens of other playlists I've put together over the years, and see which ones might interest you. Maybe you're more of a fan of guitar music? Or maybe you'd be more interested in "Classical (Scary)" with its dark and atmospheric pieces. My personal favourite is "Piano Rarities", full of soulful, modern and slightly jazzier tunes.
             </p>
             
             <div style="text-align: center;">
@@ -153,5 +235,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Toggle "Why classical music" expandable box
+        document.getElementById('whyClassicalBox').addEventListener('click', function() {
+            this.classList.toggle('expanded');
+        });
+    </script>
 </body>
 </html>
