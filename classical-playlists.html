@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Mobile-optimized cover images - narrower aspect ratio */
+        @media (max-width: 768px) {
+            .playlist-cover {
+                height: 140px !important;
+            }
+            .playlist-cover img {
+                object-position: center 30%;
+            }
+            .playlist-card {
+                padding: 18px;
+            }
+            .playlist-description {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+            }
+            .playlists-grid {
+                gap: 20px !important;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="page-container">
@@ -44,36 +65,6 @@
                         </a>
                     </div>
 
-                    <!-- So Chilled - Barely Even Music - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #4f46e5; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/so_chilled_barely_music_new_cover.jpg" alt="So Chilled - Barely Even Music" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">So Chilled - Barely Even Music</h3>
-                        <p class="playlist-description">
-                            The most ambient and ethereal classical pieces. Music that exists in the background of your consciousness, perfect for deep focus or meditation.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/42foQl9RYju853G7ZzKYxL')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Driving Through British Countryside - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #4f46e5; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/british_countryside_new_cover.jpg" alt="Driving Through British Countryside" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Driving Through British Countryside</h3>
-                        <p class="playlist-description">
-                        There's something about British classical music that feels like taking a breath of fresh air in the countryside, surrounded by rolling hills and peaceful country roads.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/2gl9T9OIDLKJKS1TPfcv1Q')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
                     <!-- Profoundly Calm - Featured -->
                     <div class="playlist-card" style="border: 3px solid #4f46e5; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);">
                         <div class="playlist-cover">
@@ -84,36 +75,6 @@
                             Deep tranquility in musical form. These pieces create a sense of profound peace and inner stillness.
                         </p>
                         <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/3xoUfxvl5UnhVlChPXkthT')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Nice Classical Guitar - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #4f46e5; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/nice_classical_guitar_new_cover.jpg" alt="Nice Classical Guitar" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Nice Classical Guitar</h3>
-                        <p class="playlist-description">
-                            Beautiful classical guitar pieces that showcase the instrument's intimate and expressive capabilities.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/1nBzagJwpjQgreDJTAV5XT')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Vibey Schumann - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #4f46e5; box-shadow: 0 10px 25px rgba(79, 70, 229, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/vibey_schumann_new_cover.jpg" alt="Vibey Schumann" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Vibey Schumann</h3>
-                        <p class="playlist-description">
-                            Schumann's most atmospheric and mood-setting pieces. Perfect for creating a contemplative and artistic atmosphere.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/6NMcz26cLYY3jopGErRCyw')">
                             <i class="fab fa-spotify"></i>
                             Listen
                         </a>
@@ -131,65 +92,8 @@
                 </p>
                 
                 <div class="playlists-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
-                    <!-- Top-Tier Classical - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #dc7826; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/bangers_only_new_cover.jpg" alt="Top Tier - Classical" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Top Tier - Classical</h3>
-                        <p class="playlist-description">
-                            Throughout years of listening to this kind of music, I've finally done it. I've curated the best pieces of music ever made over the past 300 years.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/45PWqyhJFKCbH6zM6CAPAy')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Rock/Metal (but it's Classical) - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #dc7826; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/beast_mode_new_cover.jpg" alt="Rock/Metal (but it's Classical)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Beast Mode (Classical)</h3>
-                        <p class="playlist-description">
-                            Classical music with the intensity and power of rock and metal. Non-stop shredding on the piano. Deeply emotional and powerful stuff to work out to, or just make you feel alive.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/2T1OmtRIdPFL32zru87Jgt')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Classical (Scary) - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #dc7826; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/classical_scary_new_cover.jpg" alt="Classical (Scary)" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Classical (Scary)</h3>
-                        <p class="playlist-description">
-                            Dark and haunting works that explore the shadows of human emotion. Some extremely interesting pieces, often composed by truly dark and disturbed minds. Listening to this is like watching a well-crafted horror film.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/5VkTG3tB5QUQ0SPnSai8b8')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Deep-Dive Playlists -->
-        <section class="content-section">
-            <div class="playlist-category">
-                <h2 class="category-title">🧪 Starter Packs: Essential Deep-Dives</h2>
-                <p style="text-align: center; color: #e2e8f0; margin-bottom: 30px; font-size: 1.1rem;">
-                    My top recommendations for serious classical exploration
-                </p>
-                
-                <div class="playlists-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
                     <!-- Goated Piano Concertos - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #7c3aed; box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);">
+                    <div class="playlist-card" style="border: 3px solid #dc7826; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);">
                         <div class="playlist-cover">
                             <img src="attributes/goated_piano_concertos_new_cover.jpg" alt="Goated Piano Concertos" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                         </div>
@@ -204,7 +108,7 @@
                     </div>
 
                     <!-- Every Composer's Greatest Tunes - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #7c3aed; box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);">
+                    <div class="playlist-card" style="border: 3px solid #dc7826; box-shadow: 0 10px 25px rgba(220, 38, 38, 0.2);">
                         <div class="playlist-cover">
                             <img src="attributes/every_composers_greatest_tunes_new_cover.jpg" alt="Every Composer's Greatest Tunes" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                         </div>
@@ -213,21 +117,6 @@
                             From the really old geezers (Bach, Mozart, Beethoven) to the more modern, jazzy, spiritual ones (Chopin, Debussy, Rachmaninoff), you'll see how varied this kind of music can be.
                         </p>
                         <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/5c1bS7aWMsm8u51MIyT9A7')">
-                            <i class="fab fa-spotify"></i>
-                            Listen
-                        </a>
-                    </div>
-
-                    <!-- Piano Rarities - Featured -->
-                    <div class="playlist-card" style="border: 3px solid #7c3aed; box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);">
-                        <div class="playlist-cover">
-                            <img src="attributes/piano_rarities_new_cover.jpg" alt="Piano Rarities" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
-                        </div>
-                        <h3 class="playlist-title">Piano Rarities</h3>
-                        <p class="playlist-description">
-                            Lots of rare, modern, and lesser-known pieces here, each with a unique sound and style. If Mozart saw this playlist, his mind would be blown.
-                        </p>
-                        <a href="#" class="playlist-link" onclick="openInNewTab('https://open.spotify.com/playlist/5RVkYMTKuPXou5HCWKk9Du')">
                             <i class="fab fa-spotify"></i>
                             Listen
                         </a>
@@ -265,4 +154,4 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
