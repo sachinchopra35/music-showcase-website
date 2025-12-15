@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sachin-chopra-music.vercel.app/sitemap.xml
+
